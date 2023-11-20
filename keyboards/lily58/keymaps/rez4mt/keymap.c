@@ -24,7 +24,7 @@ enum layer_number {
   _ADJUST,
 };
 
-const uint16_t RIGHT_ENCODER_INDEX = 1; 
+const uint16_t RIGHT_ENCODER_INDEX = 1;
 
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
@@ -41,13 +41,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------| SLEEP |    | MUTE  |------+------+------+------+------+------|
  * |LCTRL |   Z  |   X  |   C  |   V  |   B  |-------|    |-------|   N  |   M  |   ,  |   .  |   /  |   \  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
- *                   |LALT  | LGUI |LOWER | /Space  /       \Enter \  |RAISE | RGUI |RALT  |
+ *                   |LALT  | LGUI |LOWER | /ENTER  /       \SPACE \  |RAISE | RGUI |RALT  |
  *                   |      |      |      |/       /         \      \ |      |      |      |
  *                   `-------------------''-------'           '------''--------------------'
- * 
+ *
  * Rotary Encoder:
  * LEFT                      * RIGHT
- * ,-----------------------. * ,-----------------------. 
+ * ,-----------------------. * ,-----------------------.
  * |    ->     |    <-     | * |    ->     |    <-     |
  * |-----------------------| * |-----------------------|
  * | R HZ SCRL | L HZ SCRL | * |VRT SCRL UP|VRT SCRL DN|
@@ -59,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,   KC_Q,   KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_MINS,
   KC_LSFT,  KC_A,   KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
   KC_LCTL,  KC_Z,   KC_X,    KC_C,    KC_V,    KC_B,    KC_SLEP,  KC_MUTE,   KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BACKSLASH,
-                             KC_LALT, KC_LGUI, LOWER,   KC_SPC,   KC_ENT ,   RAISE ,  KC_RGUI, KC_RALT
+                             KC_LALT, KC_LGUI, LOWER,   KC_ENT ,   KC_SPC,   RAISE ,  KC_RGUI, KC_RALT
 ),
 /* LOWER
  * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -73,12 +73,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |      |      |      | /       /       \      \  |      |      |      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
- *                   `-------------------''-------'           '------''--------------------' 
- * 
- * 
- * Rotary Encoder: 
+ *                   `-------------------''-------'           '------''--------------------'
+ *
+ *
+ * Rotary Encoder:
  * LEFT                      * RIGHT
- * ,-----------------------. * ,-----------------------. 
+ * ,-----------------------. * ,-----------------------.
  * |    ->     |    <-     | * |    ->     |    <-     |
  * |-----------------------| * |-----------------------|
  * |           |           | * |  VOL UP   |  VOL DN   |
@@ -103,10 +103,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   |      |      |      | /       /       \      \  |      |      |      |
  *                   |      |      |      |/       /         \      \ |      |      |      |
- *                   `-------------------''-------'           '------''--------------------' 
+ *                   `-------------------''-------'           '------''--------------------'
  * Rotary Encoder:
  * LEFT                      * RIGHT
- * ,-----------------------. * ,-----------------------. 
+ * ,-----------------------. * ,-----------------------.
  * |    ->     |    <-     | * |    ->     |    <-     |
  * |-----------------------| * |-----------------------|
  * |   CTRL+Y  |  CTRL+Z   | * |           |           |
