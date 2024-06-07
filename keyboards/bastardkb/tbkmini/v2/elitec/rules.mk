@@ -17,3 +17,4 @@ RGBLIGHT_SUPPORTED = yes    # RGB underglow is supported, but not enabled by def
 RGB_MATRIX_ENABLE = yes     # Enable keyboard RGB matrix (do not use together with RGBLIGHT_ENABLE)
 
 SPLIT_KEYBOARD = yes
+VIA_ENABLE=yes
